@@ -60,5 +60,5 @@ public class Main {
         ps = 24*31*60/2;
         int s3 = ps*b;
         System.out.println("За 3 дня машина произвела " + s3 + " штук бутылок");
-        }
+    }
 }
