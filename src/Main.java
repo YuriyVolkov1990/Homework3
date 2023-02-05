@@ -63,7 +63,7 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + s2 + " штук бутылок");
         ps = 24 * 31 * 60 / 2;
         int s3 = ps * b;
-        System.out.println("За 3 дня машина произвела " + s3 + " штук бутылок");
+        System.out.println("За месяц машина произвела " + s3 + " штук бутылок");
     }
     public static void task5 () {
         System.out.println("Задача 5");
@@ -99,8 +99,8 @@ public class Main {
         System.out.println("Минимум " + daysMax + " дней");
         byte daysMin = (byte) (weight/looseWeightMax);
         System.out.println("Максимум " + daysMin + " дней");
-        byte middleDays = (byte) ((daysMax + daysMin)/2);
-        System.out.println("В среднем " + middleDays + " дней");
+        double middleDays = weight/((looseWeightMin + looseWeightMax)/2D);
+        System.out.printf("В среднем дней %.2f%n", middleDays);
     }
     public static void task8 () {
         System.out.println("Задача 8");
