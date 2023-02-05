@@ -4,6 +4,8 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+        task6();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -49,16 +51,30 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         byte b = 16;
-        short s = (short)(b * 10);
+        short s = (short) (b * 10);
         System.out.println("За 20 минут машина произвела " + s + " штук бутылок");
-        short ps = 24*60/2;
-        short s1 = (short) (ps*b);
+        short ps = 24 * 60 / 2;
+        short s1 = (short) (ps * b);
         System.out.println("За сутки машина произвела " + s1 + " штук бутылок");
-        ps = 24*3*60/2;
-        int s2 = ps*b;
+        ps = 24 * 3 * 60 / 2;
+        int s2 = ps * b;
         System.out.println("За 3 дня машина произвела " + s2 + " штук бутылок");
-        ps = 24*31*60/2;
-        int s3 = ps*b;
+        ps = 24 * 31 * 60 / 2;
+        int s3 = ps * b;
         System.out.println("За 3 дня машина произвела " + s3 + " штук бутылок");
+    }
+    public static void task5 () {
+        System.out.println("Задача 5");
+        byte b = 120;
+        byte bw = 2;
+        byte bb = 4;
+        byte nc = (byte)(b/(bw + bb));
+        byte bwt = (byte) (nc*bw);
+        byte bbt = (byte) (nc*bb);
+        System.out.println("В школе, где " + nc + " классов, нужно " + bwt + " банок белой краски и " + bbt + " банок коричневой краски");
+
+    }
+    public static void task6 () {
+
     }
 }
