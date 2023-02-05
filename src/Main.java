@@ -43,11 +43,14 @@ public class Main {
         byte a = 27;
         byte e = 30;
         short p = 480;
-        byte ip = (byte) (p / (l+a+e));
+        byte ip = (byte) (p / (l + a + e));
         System.out.println("На каждого ученика рассчитано " + ip + " листов бумаги");
     }
     public static void task4 () {
         System.out.println("Задача 4");
+        byte p = 16;
+        short s = (short)(p * 10);
+        System.out.println("За 20 минут машина произвела " + s + " штук бутылок");
 
-    }
+        }
 }
