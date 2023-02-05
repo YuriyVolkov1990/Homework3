@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
+        task4();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -34,6 +36,18 @@ public class Main {
         System.out.println(s2);
         byte b = 67;
         System.out.println(b);
+    }
+    public static void task3 () {
+        System.out.println("Задача 3");
+        byte l = 23;
+        byte a = 27;
+        byte e = 30;
+        short p = 480;
+        byte ip = (byte) (p / (l+a+e));
+        System.out.println("На каждого ученика рассчитано " + ip + " листов бумаги");
+    }
+    public static void task4 () {
+        System.out.println("Задача 4");
 
     }
 }
