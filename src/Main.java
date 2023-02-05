@@ -34,5 +34,6 @@ public class Main {
         System.out.println(s2);
         byte b = 67;
         System.out.println(b);
+
     }
 }
