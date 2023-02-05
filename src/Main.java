@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -74,18 +75,30 @@ public class Main {
         System.out.println("В школе, где " + nc + " классов, нужно " + bwt + " банок белой краски и " + bbt + " банок коричневой краски");
     }
     public static void task6 () {
-    System.out.println("Задача 6");
-    byte bananas = 5;
-    byte weightBanana = 80;
-    short milkVolume = 200;
-    byte milkWeight = 105;
-    byte numberIceCream = 2;
-    byte weightIceCream = 100;
-    byte egg = 4;
-    byte weightEgg = 70;
-    short totalWeightGram = (short) (bananas*weightBanana + milkVolume/100*milkWeight + numberIceCream*weightIceCream + egg*weightEgg);
-    float totalWeightKilo = totalWeightGram/1000f;
-    System.out.println(totalWeightGram);
-    System.out.println(totalWeightKilo);
+        System.out.println("Задача 6");
+        byte bananas = 5;
+        byte weightBanana = 80;
+        short milkVolume = 200;
+        byte milkWeight = 105;
+        byte numberIceCream = 2;
+        byte weightIceCream = 100;
+        byte egg = 4;
+        byte weightEgg = 70;
+        short totalWeightGram = (short) (bananas*weightBanana + milkVolume/100*milkWeight + numberIceCream*weightIceCream + egg*weightEgg);
+        float totalWeightKilo = totalWeightGram/1000f;
+        System.out.println(totalWeightGram);
+        System.out.println(totalWeightKilo);
+    }
+    public static void task7 () {
+        System.out.println("Задача 7");
+        short weight = 7000;
+        short looseWeightMin = 250;
+        short looseWeightMax = 500;
+        byte daysMax = (byte) (weight/looseWeightMin);
+        System.out.println("Минимум " + daysMax + " дней");
+        byte daysMin = (byte) (weight/looseWeightMax);
+        System.out.println("Максимум " + daysMin + " дней");
+        byte middleDays = (byte) ((daysMax + daysMin)/2);
+        System.out.println("В среднем " + middleDays + " дней");
     }
 }
