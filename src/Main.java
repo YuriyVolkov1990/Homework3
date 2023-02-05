@@ -72,9 +72,20 @@ public class Main {
         byte bwt = (byte) (nc*bw);
         byte bbt = (byte) (nc*bb);
         System.out.println("В школе, где " + nc + " классов, нужно " + bwt + " банок белой краски и " + bbt + " банок коричневой краски");
-
     }
     public static void task6 () {
-
+    System.out.println("Задача 6");
+    byte bananas = 5;
+    byte weightBanana = 80;
+    short milkVolume = 200;
+    byte milkWeight = 105;
+    byte numberIceCream = 2;
+    byte weightIceCream = 100;
+    byte egg = 4;
+    byte weightEgg = 70;
+    short totalWeightGram = (short) (bananas*weightBanana + milkVolume/100*milkWeight + numberIceCream*weightIceCream + egg*weightEgg);
+    float totalWeightKilo = totalWeightGram/1000f;
+    System.out.println(totalWeightGram);
+    System.out.println(totalWeightKilo);
     }
 }
