@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -100,5 +101,20 @@ public class Main {
         System.out.println("Максимум " + daysMin + " дней");
         byte middleDays = (byte) ((daysMax + daysMin)/2);
         System.out.println("В среднем " + middleDays + " дней");
+    }
+    public static void task8 () {
+        System.out.println("Задача 8");
+        int masha = 67760;
+        int denis = 83690;
+        int cristina = 76230;
+        int mashaPercent = masha/10;
+        int denisPercent = denis/10;
+        int cristinaPercent = cristina/10;
+        masha = masha + mashaPercent;
+        denis = denis + denis/10;
+        cristina = cristina + cristina/10;
+        System.out.println("Маша теперь получает " + masha + " рублей. Годовой доход вырос на " + mashaPercent*12 + " рублей");
+        System.out.println("Денис теперь получает " + denis + " рублей. Годовой доход вырос на " + denisPercent*12 + " рублей");
+        System.out.println("Кристина теперь получает " + cristina + " рублей. Годовой доход вырос на " + cristinaPercent*12 + " рублей");
     }
 }
